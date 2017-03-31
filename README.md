@@ -10,4 +10,4 @@ Also more copy/paste functionality and maybe a "snap to grid" to get exact note 
 
 There is a way to get the demo-songs from the sonant page into this program. If anyone is interested I can do this.
 
-OOPS: currently the midi functionality is commented out. I hope in the next days I will find a way to put both in: midi and computer keyboard keys...
+compile with www.freebasic.net
