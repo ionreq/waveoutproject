@@ -34,32 +34,32 @@
 
   evtl noch zu machen
 
-	instrumente und oktaven für die beiden keyboards mit einem klick anwählbar
-	farbige buttons für die instrumente
+	instrumente und oktaven fÃ¼r die beiden keyboards mit einem klick anwÃ¤hlbar
+	farbige buttons fÃ¼r die instrumente
 	darstellung in notenlinien-schreibweise
-	noten mit der maus zeichnen, auch während play
+	noten mit der maus zeichnen, auch wÃ¤hrend play
 		# und b irgendwie graphisch, zb mit hell/dunkel
 	schlagzeug instrumente evtl noch auf andere tasten legen
-		und dann eine feste frequenz dafür festlegen
-	nochmal überprüfen was es mit dem song.note kommentar
+		und dann eine feste frequenz dafÃ¼r festlegen
+	nochmal Ã¼berprÃ¼fen was es mit dem song.note kommentar
 		in waveout51.bas auf sich hat(tte)
-	abfragen, ob lag größer als buffersize (va für sch)
-	doch nochmal mit einer plag geschwindigkeit was überlegen
-		damit es nicht bei jedem ruckler in plag gleich zu einem ruckler im stück kommt
-	noten mit der maus verschieben/verändern/löschen
-	in layers aufnehmen/editieren, einzelne layers anwählbar
+	abfragen, ob lag grÃ¶ÃŸer als buffersize (va fÃ¼r sch)
+	doch nochmal mit einer plag geschwindigkeit was Ã¼berlegen
+		damit es nicht bei jedem ruckler in plag gleich zu einem ruckler im stÃ¼ck kommt
+	noten mit der maus verschieben/verÃ¤ndern/lÃ¶schen
+	in layers aufnehmen/editieren, einzelne layers anwÃ¤hlbar
 	editier-filter, zb nur instrument x
-	markierten bereich löschen: auch frequenzen beachten
+	markierten bereich lÃ¶schen: auch frequenzen beachten
 	wenn in button geklickt, diesen button merken, und mausposition nur
 		auf diesen beziehen
-	instrument wellenform anzeigen (wenn taste gedrückt)
+	instrument wellenform anzeigen (wenn taste gedrÃ¼ckt)
 		evtl sogar einmal normal und einmal fft
 	riesige liste mit instrumenten auf dem bildschirm,
-		wenn man mit der maus darauffährt und eine taste drückt
-		erklingt das instrument. mit klick wählt man es aus
+		wenn man mit der maus darauffÃ¤hrt und eine taste drÃ¼ckt
+		erklingt das instrument. mit klick wÃ¤hlt man es aus
 		in die liste der song-instrumente
 	wenn man auf instbutton ist, kein songrec. das ist gut zum ausprobieren.
-		wenn dieses feature sich nicht so ergeben würde, müsste man es glatt einführen.
+		wenn dieses feature sich nicht so ergeben wÃ¼rde, mÃ¼sste man es glatt einfÃ¼hren.
 	beliebige anzahl instrumente, "neues instrument" button
 	option, die instrumente auch im alten format direkt im song zu speichern
 
@@ -67,92 +67,92 @@
   gemacht
 
 	tasten machen nur frequenzen
-	oszillatoren unabhängig von den tasten machen
+	oszillatoren unabhÃ¤ngig von den tasten machen
 	instrumente mit verschiedenen wellenformtypen
-	zwei unabhängige keyleisten mit unabhängig einstellbaren oktaven und instrumenten
+	zwei unabhÃ¤ngige keyleisten mit unabhÃ¤ngig einstellbaren oktaven und instrumenten
 	volume in instrument rein
 	aufnahmefunktion
 	wiedergabe von aufgenommenem
 	bei wiedergabe gleichzeitig aufnehmen
-	farben für die instrumente
-	endmarkierung für song
-	songrec in songplay einfügen nach zeiten geordnet
+	farben fÃ¼r die instrumente
+	endmarkierung fÃ¼r song
+	songrec in songplay einfÃ¼gen nach zeiten geordnet
 	song speichern und laden
 	graphik mit opengl, rechtecken und antialiasing
-	songcounter unabhängig von waveoutcounter pt machen
+	songcounter unabhÃ¤ngig von waveoutcounter pt machen
 	stop (kein play, kein scrolling)
 	ab beliebiger stelle abspielen
-	zoom für songdarstellung
+	zoom fÃ¼r songdarstellung
 	im song herumscrollen (mit maus verschieben)
 	nur aufnehmen wenn play=1
-	schalterflächen größer und mit rahmen rum
+	schalterflÃ¤chen grÃ¶ÃŸer und mit rahmen rum
 	mit strg und maus bereich markieren
-	markierten bereich löschen (noch ohne frequenzen)
+	markierten bereich lÃ¶schen (noch ohne frequenzen)
 	alles nach cursor (dh playcnt) nach links/rechts verschieben
 	fft
 	delay, echo, reverb
 	mehrere oszillatoren pro instrument
 	attack, decay, sustain, release in instrument rein
 	filter ala sonant in instrument rein
-	delay für echo in instrument rein
+	delay fÃ¼r echo in instrument rein
 	voices in vier threads rechnen lassen
 	sonant: ein delay buffer pro instrument, nicht pro voice
-	für pan und lfo und sachen die von p abhängig sind:
+	fÃ¼r pan und lfo und sachen die von p abhÃ¤ngig sind:
 		playcnt verwenden statt pt, damit es immer gleich ist
-		unabhängig von der startzeit. pt ist nur für echtzeit einspielen!
+		unabhÃ¤ngig von der startzeit. pt ist nur fÃ¼r echtzeit einspielen!
 	zum testen ein grosses wav file machen, einmal mit testsonant.exe
 		und einmal mit waveout. mit audacity vergleichen, ob wellenform
-		gleich bzw stark ähnlich. evtl single statt double benutzen.
-		probieren, es bit für bit gleich hinzubekommen.
+		gleich bzw stark Ã¤hnlich. evtl single statt double benutzen.
+		probieren, es bit fÃ¼r bit gleich hinzubekommen.
 		(geht nicht wegen rand(): die reihenfolge der aufrufe ist unterschiedlich)
 	3d graphische anzeigeform
 	mit mehr als einem thread funktioniert es noch nicht
-		etwas überlegen, wie man song wieder im hauptthread lesen
+		etwas Ã¼berlegen, wie man song wieder im hauptthread lesen
 		kann, und die voices trotzdem sample-genau einschalten kann
-		lösung: voice buffer, dh alle voices ca 1000 samples lang buffern
+		lÃ¶sung: voice buffer, dh alle voices ca 1000 samples lang buffern
 	anzeigen, wie weit voi hinter schedule und waveout hinter voi
 	buttons als opengl drawlist (nix gebracht)
 	instrument editor
-	für vlag und wlag geschwindigkeit einführen, dh eine art WL
+	fÃ¼r vlag und wlag geschwindigkeit einfÃ¼hren, dh eine art WL
 		anzahl samples die jeden durchgang gemacht wird, und
-		diese anzahl dann nur um eins erhöhen oder erniedrigen
-		jenachdem ob sie zu groß oder zu klein ist
-		das sollte eine flüssigere anzeige ergeben
+		diese anzahl dann nur um eins erhÃ¶hen oder erniedrigen
+		jenachdem ob sie zu groÃŸ oder zu klein ist
+		das sollte eine flÃ¼ssigere anzeige ergeben
 		und rucklerer verhindern
 		(probiert, hat nix gebracht bzw nicht funktioniert)
 	fx filter wirkung mit showfft ausprobieren
 	instrument panel ein/ausblendbar machen
 	songrec in eigenen (helleren) farben anzeigen
-	was überlegen wie man die envelope werte feiner einstellen kann
-	shift taste für zehnerschritte bei envelope
-	gehaltene instrumente (neuen schalter einführen, .press abfragen)
+	was Ã¼berlegen wie man die envelope werte feiner einstellen kann
+	shift taste fÃ¼r zehnerschritte bei envelope
+	gehaltene instrumente (neuen schalter einfÃ¼hren, .press abfragen)
 	buttons die nicht viele werte haben schmaler und nebeneinander
 	farbe des instruments im panel anzeigen
 	drawsong(): das aktuelle keyboard instrument (1 oder instshow)
 		wird im vordergrund angezeigt (dh als letztes gezeichnet)
-		damit es nicht von den anderen instrumenten übermalt wird
+		damit es nicht von den anderen instrumenten Ã¼bermalt wird
 	bpm button
 	clear song button
 	mergen von songrec zu songplay mit button
 	scheduler routine wartet auf 1ms multimedia timer
-	getfrequency raus. dabei entdeckt, daß es songs gibt, in denen
+	getfrequency raus. dabei entdeckt, daÃŸ es songs gibt, in denen
 		die maximalwerte nicht eingehalten werden
 		zb regressions hatte pan_freq=8, was durch getfrequency zu 0 wurde.
 		beatnik hat delay_time=9, viele haben fx_freq=11025.
-		liver hatte auch pan_freq=8. geändert zu 0
+		liver hatte auch pan_freq=8. geÃ¤ndert zu 0
 	im song instrumente nach namen laden
 	beliebige anzahl instrumente
-	namen für instrumente und als extra dateien abspeichern
+	namen fÃ¼r instrumente und als extra dateien abspeichern
 	instrumentenbank datei mit allen instrumenten
 	instrument namen button mit wheel funktion, entkoppeln von kinst
 	instrument in bank speichern, bank in datei speichern
-	ein modifiziertes instrument (werte geändert)
+	ein modifiziertes instrument (werte geÃ¤ndert)
 		kriegt beim speichern einen anderen namen (+"_mod")
 		und wird an das ende der bank kopiert, nbankinst+=1
 	"_mod" kriegt noch eine laufende nummer
-	tab taste für 1000er inkrement
+	tab taste fÃ¼r 1000er inkrement
 	vertical sync mit directdraw funktion! wie in guten alten zeiten!
-	button für playcnt
+	button fÃ¼r playcnt
 	load und save mit GetOpenFileName()
 		wie kann man den dialog auch im fullscreen modus anzeigen?
 			antwort: momentan gar nicht, es ist ein opengl problem unter win7
@@ -161,27 +161,27 @@
 			evtl - ist sonst nicht so schlimm, weil ja nur die
 			notentasten im thread abgefragt werden, keine funktionstasten
 			evtl kann man auch einfach waveoutpause() machen
-	für playcnt button eigene wheel-schrittweiten: vielfache von rowlen
+	fÃ¼r playcnt button eigene wheel-schrittweiten: vielfache von rowlen
 	frequenzen aus getnotefreq() an kammerton 440 Hz angepasst
-	tasten anders, sodaß mehr oktaven draufpassen
+	tasten anders, sodaÃŸ mehr oktaven draufpassen
 
 
   noch zu machen
 	beim laden eines songs playcnt=0 und ep=1 setzen
-	wenn man play drückt ohne zu mergen ist songrec weg:
+	wenn man play drÃ¼ckt ohne zu mergen ist songrec weg:
 		ist das gut (ein feature) oder schlecht?
 	was ist, wenn man selectbox nach links zieht? ist dann breite<0?
 	auto insert pattern: solange play/rec wird das pattern im copybuffer
-		automatisch immmer wieder angefügt
-	loop-aufnahme: altes wird überschrieben (wenn taste gedrückt)
+		automatisch immmer wieder angefÃ¼gt
+	loop-aufnahme: altes wird Ã¼berschrieben (wenn taste gedrÃ¼ckt)
 	loop-wiedergabemodus
-	cut/copy/paste dh copybuffer einführen
-	nur in songrec editieren (für insdel ist schon, noch für alles andere)
-	für snaptogrid: strg=64stel, shift=32stel, alt=16tel, tab=8tel (oder so)
-	für alle funktionstasten: gedrückt counter,
+	cut/copy/paste dh copybuffer einfÃ¼hren
+	nur in songrec editieren (fÃ¼r insdel ist schon, noch fÃ¼r alles andere)
+	fÃ¼r snaptogrid: strg=64stel, shift=32stel, alt=16tel, tab=8tel (oder so)
+	fÃ¼r alle funktionstasten: gedrÃ¼ckt counter,
 		und dann ein counter wert, ab dem wiederholung eintritt
-		die wiederholungsgeschwindigkeit kann evtl je nach auflösung sein
-	taste (pos1) für abspeichern von instrument in bank ohne "_modx"
+		die wiederholungsgeschwindigkeit kann evtl je nach auflÃ¶sung sein
+	taste (pos1) fÃ¼r abspeichern von instrument in bank ohne "_modx"
 
 '/
 
@@ -280,20 +280,20 @@ Dim Shared As Integer mx, mplaycnt, my, mplaydy, pangrab		' for panning
 
 ' keys
 
-Const NKEYS1 = 5+7+5+1
-Const NKEYS2 = 7+5+7+1
-Const NKEYS = NKEYS1+NKEYS2		' number of keys with notes
+Const NKBKEYS1 = 5+7+5+1
+Const NKBKEYS2 = 7+5+7+1
+Const NKBKEYS = NKBKEYS1+NKBKEYS2		' number of keys with notes
 
-Dim Shared As Integer keys(NKEYS) => {  _		' virtual key code of note keys
+Dim Shared As Integer keys(NKBKEYS) => {  _		' virtual key code of note keys
 226, VK_A, VK_Y, VK_S, VK_X,  VK_C, VK_F, VK_V, VK_G, VK_B, VK_H, VK_N,  VK_M, VK_K, 188, VK_L, 190,  189,  _
 VK_Q, VK_2, VK_W, VK_3, VK_E, VK_4, VK_R,  VK_T, VK_6, VK_Z, VK_7, VK_U,  VK_I, VK_9, VK_O, VK_0, VK_P, 219, 186,  187 _
 }
 
-/'
-Const NKEYS1 = 2*12
-Const NKEYS2 = 2*12+1
-Const NKEYS = NKEYS1+NKEYS2
-'/
+Const NMIDIKEYS1 = 2*12
+Const NMIDIKEYS2 = 2*12+1
+Const NMIDIKEYS = NMIDIKEYS1+NMIDIKEYS2
+
+Const NKEYS = NKBKEYS+NMIDIKEYS
 
 Const NOTHKEYS = 2		' number of keys with other functions
 
@@ -1262,13 +1262,17 @@ Sub initkeys ()
 	Dim As Integer t
 
 	For t = 0 To NKEYS-1
-		If t<NKEYS1 Then
+		If t<NKBKEYS1 Then
 			key(t).note = t + koct1*12 + 87
-			'key(t).note = t + (koct1+7)*12 + 3
+			key(t).inst = kinst1
+		ElseIf t<NKBKEYS1+NKBKEYS2 Then
+			key(t).note = t + koct2*12 + 86-12
+			key(t).inst = kinst2
+		ElseIf t<NKBKEYS1+NKBKEYS2+NMIDIKEYS1 Then
+			key(t).note = t-NKBKEYS + (koct1+7)*12 + 3
 			key(t).inst = kinst1
 		Else
-			key(t).note = t + koct2*12 + 86-12
-			'key(t).note = t + (koct2+7)*12 + 3
+			key(t).note = t-NKBKEYS + (koct2+7)*12 + 3
 			key(t).inst = kinst2
 		EndIf
 	Next
@@ -1707,8 +1711,11 @@ Sub doschedule ()
 
 		For t = 0 To NKEYS-1
 			key(t).last = key(t).act
-			If GetAsyncKeyState(keys(t)) Then key(t).act = 1 : Else key(t).act = 0
-			'If midikey(t+36) Then key(t).act = 1 : Else key(t).act = 0
+			If t<NKBKEYS Then
+				If GetAsyncKeyState(keys(t)) Then key(t).act = 1 : Else key(t).act = 0
+			Else
+				If midikey(t-NKBKEYS+36) Then key(t).act = 1 : Else key(t).act = 0
+			EndIf
 		Next
 
 
